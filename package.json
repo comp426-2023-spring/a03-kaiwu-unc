@@ -16,8 +16,11 @@
     "url": "https://github.com/comp426-2023-spring/a03-kaiwu-unc/issues"
   },
   "homepage": "https://github.com/comp426-2023-spring/a03-kaiwu-unc#readme",
-  "bin" : {
+  "bin": {
     "node-rps": "./lib/rps-cli.js",
     "node-rpsls": "./lib/rpsls-cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
   }
 }
