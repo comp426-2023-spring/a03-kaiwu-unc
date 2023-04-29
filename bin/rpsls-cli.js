@@ -46,7 +46,7 @@ if(args.r !== undefined || args.rules) {
 }
 
 try {
-    console.log(rpsls(args._[0]));
+    console.log(JSON.stringify(rpsls(args._[0])));
 } catch(e) {
     console.error(e.message); 
     help();

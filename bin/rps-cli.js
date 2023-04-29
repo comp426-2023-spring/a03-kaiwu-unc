@@ -40,7 +40,7 @@ if(args.r !== undefined || args.rules) {
 }
 
 try {
-    console.log(rps(args._[0]));
+    console.log(JSON.stringify(rps(args._[0])));
 } catch(e) {
     console.error(e.message); 
     help();
