@@ -30,18 +30,17 @@ const rules = function() {
     `
     console.log(rulesText);
 }
-
-if(args.h || args.help) {
+if(args.h !== undefined || args.help) {
     help();
     process.exit();
 }
-if(args.r || args.rules) {
+if(args.r !== undefined || args.rules) {
     rules();
     process.exit();
 }
 
 try {
-    rps(args._[0]);
+    console.log(rps(args._[0]));
 } catch(e) {
     console.error(e.message); 
     help();
